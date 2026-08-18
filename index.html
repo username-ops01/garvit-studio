@@ -3,41 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Podcast &amp; Show</title>
+<title>Interior Design Studio</title>
 <style>
 :root{
-    --op-bg: #0a0a0a;
-    --op-bg-2: #141414;
-    --op-surface: #151515;
-    --op-surface-2: #1f1f1f;
-    --op-stroke: rgba(255,255,255,.16);
-    --op-stroke-strong: rgba(255,255,255,.42);
-    --op-text: #f5f5f5;
-    --op-muted: #a3a3a3;
-    --op-a1: #f5f5f5;
-    --op-a2: #d4d4d4;
-    --op-a3: #737373;
-    --op-on-accent: #0a0a0a;
+    --op-bg: #faf8f4;
+    --op-bg-2: #ffffff;
+    --op-surface: #ffffff;
+    --op-surface-2: #f2efe8;
+    --op-stroke: rgba(28,27,24,.14);
+    --op-stroke-strong: rgba(28,27,24,.34);
+    --op-text: #1c1b18;
+    --op-muted: #6b675f;
+    --op-a1: #1c1b18;
+    --op-a2: #8a6a3b;
+    --op-a3: #3f5c50;
+    --op-on-accent: #faf8f4;
     --op-shadow: none;
-    --op-font: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    --op-font-head: 'Avenir Next','Segoe UI','Century Gothic',Futura,'Trebuchet MS',sans-serif;
+    --op-font: Georgia,'Iowan Old Style','Palatino Linotype','Times New Roman',serif;
+    --op-font-head: Georgia,'Iowan Old Style','Palatino Linotype','Times New Roman',serif;
     --op-font-mono: ui-monospace,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;
-    --op-head-weight: 800;
-    --op-tracking: -.05em;
-    --op-radius: 0px;
-    --op-radius-sm: 0px;
-    --op-btn-radius: 0px;
-    --op-chip-radius: 0px;
+    --op-head-weight: 600;
+    --op-tracking: -.015em;
+    --op-radius: 2px;
+    --op-radius-sm: 2px;
+    --op-btn-radius: 2px;
+    --op-chip-radius: 2px;
     --op-blur: 0px;
-    --op-card-bg: var(--op-surface);
+    --op-card-bg: transparent;
     --op-card-border: var(--op-stroke);
     --op-card-shadow: none;
-    --op-lift: -3px;
+    --op-lift: 0px;
     --op-grid-opacity: 0;
     --op-aurora-opacity: 0;
-    --op-eyebrow-rule: 34px;
-    --op-shell: 1220px;
-    --op-pad-scale: 1.05;
+    --op-eyebrow-rule: 0px;
+    --op-shell: 1080px;
+    --op-pad-scale: .92;
   
     --op-grad: var(--op-a1);
     --op-grad-text: linear-gradient(0deg,var(--op-a1),var(--op-a1));
@@ -339,54 +339,52 @@ ul{margin:0;padding:0;list-style:none}
   .v-nav-simple .sheet a{padding:12px 0;border-bottom:1px solid var(--op-stroke)}
   .v-nav-simple .sheet .sheet-cta{margin-top:14px;padding:11px 18px;border-bottom:0;justify-content:center}
 }
-/* hero-classic */
-.v-hero-classic .copy{max-width:64ch}
-.v-hero-classic.align-center .copy{margin:0 auto;text-align:center}
-.v-hero-classic.align-center .op-sub{margin-left:auto;margin-right:auto}
-.v-hero-classic.align-center .op-actions{justify-content:center}
-.v-hero-classic.align-right .copy{margin-left:auto;text-align:right}
-.v-hero-classic.align-right .op-actions{justify-content:flex-end}
-.v-hero-classic .op-display{font-size:clamp(2.2rem,5vw,3.9rem)}
-.v-hero-classic .note{margin-top:16px;font-size:13px;color:var(--op-muted)}
-.v-hero-classic .shot{margin-top:clamp(36px,5vw,64px)}
-/* blog-featured-list */
-.v-blog-featured-list .layout{align-items:start;gap:clamp(28px,4vw,64px)}
-.v-blog-featured-list .lead .op-media{margin-bottom:20px}
-.v-blog-featured-list .cat{
-  font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--op-a1);font-weight:600;
+/* hero-image-side */
+.v-hero-image-side .op-display{font-size:clamp(2rem,4.4vw,3.4rem)}
+.v-hero-image-side .points{margin-top:26px;display:grid;gap:12px}
+.v-hero-image-side .points li{display:flex;align-items:flex-start;gap:11px;font-size:15.5px;color:var(--op-muted)}
+.v-hero-image-side .points .op-icon{color:var(--op-a1);margin-top:2px}
+/* cards-showcase */
+.v-cards-showcase .card{display:block;overflow:hidden}
+.v-cards-showcase .op-media{border:0;border-radius:0;aspect-ratio:16/10}
+.v-cards-showcase .body{padding:clamp(16px,2vw,22px)}
+.v-cards-showcase .cat{
+  display:inline-block;margin-bottom:10px;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--op-a1);
 }
-.v-blog-featured-list .lead h3{font-size:clamp(1.5rem,2.4vw,2rem);margin:10px 0 12px;transition:color .3s}
-.v-blog-featured-list .lead:hover h3{color:var(--op-a1)}
-.v-blog-featured-list .lead p{color:var(--op-muted);font-size:15.2px;max-width:52ch}
-.v-blog-featured-list .list li+li{border-top:1px solid var(--op-stroke)}
-.v-blog-featured-list .list a{display:flex;gap:18px;padding:18px 0;transition:padding .3s}
-.v-blog-featured-list .list a:hover{padding-left:8px}
-.v-blog-featured-list .idx{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--op-a1);padding-top:3px}
-.v-blog-featured-list h4{font-size:1.02rem;font-weight:650;line-height:1.35;transition:color .3s}
-.v-blog-featured-list .list a:hover h4{color:var(--op-a1)}
-.v-blog-featured-list .meta{display:block;margin-top:6px;font-size:12px;color:var(--op-muted)}
-/* blog-grid */
-.v-blog-grid .post{display:flex;flex-direction:column}
-.v-blog-grid .post .op-media{border-radius:0;border:0;border-bottom:1px solid var(--op-stroke)}
-.v-blog-grid .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
-.v-blog-grid .meta{display:flex;justify-content:space-between;gap:12px;font-size:11.5px;color:var(--op-muted);letter-spacing:.04em}
-.v-blog-grid .cat{color:var(--op-a1);text-transform:uppercase;letter-spacing:.12em;font-weight:600}
-.v-blog-grid h3{font-size:1.12rem;line-height:1.25;transition:color .3s}
-.v-blog-grid .post:hover h3{color:var(--op-a1)}
-.v-blog-grid .body p{color:var(--op-muted);font-size:14.4px;flex:1}
-.v-blog-grid .time{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--op-muted)}
-/* team-grid */
-.v-team-grid .person{display:flex;flex-direction:column;gap:6px}
-.v-team-grid .shot{margin-bottom:12px}
-.v-team-grid.shape-circle .shot{border-radius:50%}
-.v-team-grid h3{font-size:1.05rem}
-.v-team-grid .role{font-size:12.5px;color:var(--op-a1);letter-spacing:.02em}
-.v-team-grid p{font-size:13.8px;color:var(--op-muted);margin-top:6px}
-.v-team-grid .links{display:flex;gap:14px;margin-top:11px;opacity:0;transform:translateY(6px);transition:all .35s}
-.v-team-grid .person:hover .links{opacity:1;transform:none}
-.v-team-grid .links a{font-size:12px;color:var(--op-muted);border-bottom:1px solid var(--op-stroke)}
-.v-team-grid .links a:hover{color:var(--op-a1);border-color:var(--op-a1)}
-@media (hover:none){.v-team-grid .links{opacity:1;transform:none}}
+.v-cards-showcase h3{font-size:1.15rem}
+.v-cards-showcase p{margin-top:8px;color:var(--op-muted);font-size:14.5px;line-height:1.6}
+/* about-split-glow */
+.v-about-split-glow .op-head{margin-bottom:20px}
+.v-about-split-glow .body{color:var(--op-muted);font-size:1.02rem}
+.v-about-split-glow .visual{position:relative}
+.v-about-split-glow .visual::before{
+  content:'';position:absolute;inset:12% -8% -8% 12%;border-radius:26px;z-index:-1;
+  background:linear-gradient(135deg,var(--op-a1),var(--op-a2));opacity:.24;filter:blur(38px);
+}
+.v-about-split-glow .bullets{margin-top:26px;display:grid;gap:13px}
+.v-about-split-glow .bullets li{display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.v-about-split-glow .tick{color:var(--op-a1);margin-top:2px}
+/* steps-simple */
+.v-steps-simple .steps{display:grid;gap:clamp(22px,3vw,36px);grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.v-steps-simple.down .steps{grid-template-columns:1fr;max-width:70ch}
+.v-steps-simple .steps li{display:flex;gap:16px;align-items:flex-start}
+.v-steps-simple .n{
+  flex:none;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;
+  border:1px solid var(--op-stroke-strong);font-size:14px;font-weight:700;color:var(--op-a1);
+}
+.v-steps-simple h3{font-size:1.05rem;margin-bottom:7px}
+.v-steps-simple p{color:var(--op-muted);font-size:14.5px;line-height:1.65}
+/* work-masonry */
+.v-work-masonry .wall{columns:var(--cols,3);column-gap:clamp(12px,1.6vw,20px)}
+.v-work-masonry .tile{break-inside:avoid;margin:0 0 clamp(12px,1.6vw,20px)}
+.v-work-masonry .shot{aspect-ratio:auto}
+.v-work-masonry .r1 .shot{aspect-ratio:4/5}
+.v-work-masonry .r2 .shot{aspect-ratio:1}
+.v-work-masonry .r3 .shot{aspect-ratio:4/3}
+.v-work-masonry figcaption{margin-top:9px;font-size:12.5px;color:var(--op-muted)}
+@media (max-width:860px){.v-work-masonry .wall{columns:2}}
+@media (max-width:520px){.v-work-masonry .wall{columns:1}}
 /* quote-spotlight */
 .v-quote-spotlight{text-align:center}
 .v-quote-spotlight.tinted::before{
@@ -403,19 +401,80 @@ ul{margin:0;padding:0;list-style:none}
 .v-quote-spotlight footer span{display:flex;flex-direction:column;text-align:left}
 .v-quote-spotlight strong{font-size:14.5px}
 .v-quote-spotlight em{font-style:normal;font-size:12.5px;color:var(--op-muted)}
-/* newsletter-band */
-.v-newsletter-band .panel{text-align:center}
-.v-newsletter-band.boxed .panel{
-  padding:clamp(28px,4vw,52px);border-radius:26px;border:1px solid var(--op-stroke);
-  background:linear-gradient(140deg,color-mix(in srgb,var(--op-a1) 12%,transparent),var(--op-surface));
+/* pricing-tiers */
+.v-pricing-tiers .switch{
+  display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:36px;font-size:14px;color:var(--op-muted);
 }
-.v-newsletter-band .op-eyebrow::before{display:none}
-.v-newsletter-band .op-title{font-size:clamp(1.4rem,2.6vw,2.1rem)}
-.v-newsletter-band .op-sub{margin-left:auto;margin-right:auto}
-.v-newsletter-band form{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
-.v-newsletter-band .op-field{flex:1 1 260px;max-width:360px}
-.v-newsletter-band .note{display:block;margin-top:14px;font-size:12px;color:var(--op-muted)}
-.v-newsletter-band .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.v-pricing-tiers .switch button{
+  width:48px;height:27px;border-radius:99px;border:1px solid var(--op-stroke-strong);
+  background:var(--op-surface);padding:3px;display:flex;
+}
+.v-pricing-tiers .switch i{
+  width:19px;height:19px;border-radius:50%;background:linear-gradient(135deg,var(--op-a1),var(--op-a2));
+  transition:transform .35s cubic-bezier(.16,1,.3,1);
+}
+.v-pricing-tiers [data-op-billing].annual .switch i,.v-pricing-tiers .op-shell.annual .switch i{transform:translateX(21px)}
+.v-pricing-tiers .switch em{
+  font-style:normal;font-size:11.5px;padding:4px 10px;border-radius:999px;
+  color:var(--op-a1);border:1px solid color-mix(in srgb,var(--op-a1) 40%,transparent);
+}
+.v-pricing-tiers .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(14px,1.8vw,22px);align-items:start}
+.v-pricing-tiers .plan{display:flex;flex-direction:column;gap:14px;text-align:left}
+.v-pricing-tiers .plan.featured{
+  border-color:color-mix(in srgb,var(--op-a1) 50%,transparent);
+  background:linear-gradient(170deg,color-mix(in srgb,var(--op-a1) 12%,transparent),var(--op-surface));
+  box-shadow:0 28px 70px -34px var(--op-a2);
+}
+.v-pricing-tiers .flag{
+  align-self:flex-start;padding:4px 11px;border-radius:999px;font-size:10.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  background:linear-gradient(100deg,var(--op-a1),var(--op-a2));color:var(--op-on-accent);
+}
+.v-pricing-tiers h3{font-size:1.15rem}
+.v-pricing-tiers .blurb{font-size:13.8px;color:var(--op-muted)}
+.v-pricing-tiers .price{display:flex;align-items:baseline;gap:6px;padding:8px 0 4px}
+.v-pricing-tiers .price strong{font-size:2.3rem;font-weight:800;letter-spacing:-.045em}
+.v-pricing-tiers .price span{font-size:13px;color:var(--op-muted)}
+.v-pricing-tiers .op-btn{justify-content:center}
+.v-pricing-tiers ul{display:grid;gap:10px;padding-top:16px;border-top:1px solid var(--op-stroke)}
+.v-pricing-tiers li{display:flex;gap:10px;font-size:14px;color:var(--op-muted)}
+.v-pricing-tiers .tick{color:var(--op-a1);flex:none}
+.v-pricing-tiers .foot{margin-top:28px;text-align:center;font-size:12.5px;color:var(--op-muted)}
+/* cta-simple */
+.v-cta-simple .band{
+  display:flex;flex-wrap:wrap;align-items:center;gap:clamp(20px,3vw,40px);
+  padding:clamp(26px,4vw,44px);border-radius:var(--op-radius);
+  border:1px solid var(--op-stroke-strong);
+}
+.v-cta-simple .band.filled{background:var(--op-surface-2)}
+.v-cta-simple .copy{flex:1 1 320px}
+.v-cta-simple .op-title{font-size:clamp(1.4rem,2.6vw,2rem)}
+.v-cta-simple .copy p{margin-top:10px;color:var(--op-muted);font-size:15px;max-width:52ch}
+.v-cta-simple .acts{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:620px){.v-cta-simple .acts{width:100%}.v-cta-simple .acts .op-btn{flex:1 1 100%;justify-content:center}}
+/* contact-split-form */
+.v-contact-split-form .layout{align-items:start;gap:clamp(28px,4vw,68px)}
+.v-contact-split-form .details{display:grid;gap:20px;margin-top:8px}
+.v-contact-split-form .details li{display:flex;gap:14px;align-items:flex-start}
+.v-contact-split-form .glyph{
+  width:38px;height:38px;flex:none;border-radius:12px;display:grid;place-items:center;color:var(--op-a1);
+  border:1px solid var(--op-stroke);background:var(--op-surface);
+}
+.v-contact-split-form .lbl{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--op-muted);margin-bottom:3px}
+.v-contact-split-form .details a,.v-contact-split-form .val{font-size:15px;font-weight:550}
+.v-contact-split-form .details a:hover{color:var(--op-a1)}
+.v-contact-split-form .avail{
+  display:flex;align-items:center;gap:10px;margin-top:30px;padding:14px 18px;border-radius:14px;
+  border:1px solid var(--op-stroke);background:var(--op-surface);font-size:13.5px;color:var(--op-muted);
+}
+.v-contact-split-form .form{display:flex;flex-direction:column;gap:20px}
+.v-contact-split-form .rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.v-contact-split-form .field.wide{grid-column:1 / -1}
+.v-contact-split-form .op-label i{color:var(--op-a1);font-style:normal}
+.v-contact-split-form textarea.op-field{resize:vertical;font-family:inherit}
+.v-contact-split-form .op-btn{justify-content:center}
+.v-contact-split-form .consent{font-size:12px;color:var(--op-muted);text-align:center}
+@media (max-width:560px){.v-contact-split-form .rows{grid-template-columns:1fr}}
 /* footer-columns */
 .v-footer-columns{padding:clamp(44px,6vw,72px) 24px 28px;background:var(--op-surface-2);border-top:1px solid var(--op-stroke)}
 .v-footer-columns .cols{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(auto-fit,minmax(150px,1fr));gap:clamp(26px,4vw,56px)}
@@ -437,15 +496,18 @@ ul{margin:0;padding:0;list-style:none}
 <body>
 <div class="op-backdrop" aria-hidden="true"><span class="op-aurora a"></span><span class="op-aurora b"></span><span class="op-aurora c"></span></div>
 <div class="op-page" id="top">
-<header id="sec-5t2rapy" class="v-nav-simple sticky" data-op-nav><div class="inner"><a class="brand" href="#top"><span>THE LONG WAY TO LONDON</span></a><nav class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></nav><div class="tail"><a class="op-btn primary sm" href="#contact">Get in touch</a><button class="burger" data-op-nav-toggle aria-label="Toggle menu"><span></span><span></span><span></span></button></div></div><div class="sheet"><nav><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a><a class="op-btn primary sheet-cta" href="#contact">Get in touch</a></nav></div></header>
-<section id="sec-znpl1l7" class="op-section v-hero-classic align-center" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="copy op-reveal"><span class="op-eyebrow">New episodes every Tuesday</span><h1 class="op-display">Conversations that run past the hour</h1><p class="op-sub">Two hosts, one guest, and no attempt to keep it under sixty minutes.</p><div class="op-actions"><a class="op-btn primary" href="#episodes">Listen to episode 84</a><a class="op-btn ghost" href="#subscribe">Subscribe</a></div></div></div></section>
-<section id="sec-dn6sga7" class="op-section v-blog-featured-list" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="op-head op-align-left op-reveal "><span class="op-eyebrow">Latest</span><h2 class="op-title"><span class="op-gradient">This week</span></h2></div><div class="op-split layout"><a class="lead op-reveal" href="#"><figure class="op-media wide op-ph" role="img" aria-label="What a decade of design systems taught us about naming things"><span class="op-ph-mark"></span></figure><span class="cat">Systems</span><h3>What a decade of design systems taught us about naming things</h3><p>Every failed system we inherited failed the same way: the names stopped describing the things. A field guide to getting it right the first time.</p></a><ol class="list op-stagger"><li><a href="#"><span class="idx">01</span><div><h4>Building a motion budget your team will actually keep</h4><span class="meta">Motion · 4 Aug</span></div></a></li><li><a href="#"><span class="idx">02</span><div><h4>Why we stopped using modal dialogs for destructive actions</h4><span class="meta">Patterns · 29 Jul</span></div></a></li><li><a href="#"><span class="idx">03</span><div><h4>Typography on low-density screens</h4><span class="meta">Craft · 18 Jul</span></div></a></li><li><a href="#"><span class="idx">04</span><div><h4>The interview question that predicts design hires</h4><span class="meta">Team · 9 Jul</span></div></a></li></ol></div></div></section>
-<section id="sec-jvyh0v1" class="op-section v-blog-grid" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="op-head op-align-left op-reveal "><span class="op-eyebrow">Journal</span><h2 class="op-title"><span class="op-gradient">Notes from the workbench</span></h2></div><div class="op-grid op-3 op-stagger"><a class="post op-card flush op-ring" href="#"><figure class="op-media wide op-ph" role="img" aria-label="The case against the hamburger menu, again"><span class="op-ph-mark"></span></figure><div class="body"><div class="meta"><span class="cat">Interfaces</span><span>4 Aug 2026</span></div><h3>The case against the hamburger menu, again</h3><p>Nine years of navigation research, summarised for people who have to ship on Friday.</p><span class="time">7 min read</span></div></a><a class="post op-card flush op-ring" href="#"><figure class="op-media wide op-ph" role="img" aria-label="Design tokens that survive a redesign"><span class="op-ph-mark"></span></figure><div class="body"><div class="meta"><span class="cat">Systems</span><span>21 Jul 2026</span></div><h3>Design tokens that survive a redesign</h3><p>Naming is the whole job. Here is the scheme we settled on after four failed attempts.</p><span class="time">11 min read</span></div></a><a class="post op-card flush op-ring" href="#"><figure class="op-media wide op-ph" role="img" aria-label="Motion budgets"><span class="op-ph-mark"></span></figure><div class="body"><div class="meta"><span class="cat">Motion</span><span>2 Jul 2026</span></div><h3>Motion budgets</h3><p>Treat animation like image weight: a fixed budget per screen, spent deliberately.</p><span class="time">5 min read</span></div></a></div></div></section>
-<section id="sec-oyaqmt6" class="op-section v-team-grid shape-tall" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="op-head op-align-left op-reveal "><span class="op-eyebrow">People</span><h2 class="op-title"><span class="op-gradient">The eleven</span></h2></div><div class="op-grid op-4 op-stagger"><article class="person" data-op-card data-op-card-title="Ada Ramanujan" data-op-card-eyebrow="Founder &amp; Principal" data-op-card-body="Founded the studio in 2014 after a decade leading design at two banks. Ada takes on three client engagements a year and personally runs the discovery phase of each."><figure class="op-media tall shot op-ph" role="img" aria-label="Ada Ramanujan"><span class="op-ph-mark"></span></figure><h3>Ada Ramanujan</h3><span class="role">Founder &amp; Principal</span><p>Fifteen years of interface work across finance and health.</p><div class="links"><a href="#">LinkedIn</a><a href="#">Site</a></div></article><article class="person" data-op-card data-op-card-title="Dev Arora" data-op-card-eyebrow="Head of Engineering" data-op-card-body="Dev owns the build pipeline and the performance budget. Every site the studio ships loads its first screen in under a second on a mid-range Android."><figure class="op-media tall shot op-ph" role="img" aria-label="Dev Arora"><span class="op-ph-mark"></span></figure><h3>Dev Arora</h3><span class="role">Head of Engineering</span><p>Cares deeply about first paint and nothing about frameworks.</p><div class="links"><a href="#">GitHub</a></div></article><article class="person" data-op-card data-op-card-title="Mira Kaul" data-op-card-eyebrow="Design Systems Lead" data-op-card-body="Mira builds the component libraries clients keep using long after the engagement ends, and runs the twice-yearly accessibility audit on each of them."><figure class="op-media tall shot op-ph" role="img" aria-label="Mira Kaul"><span class="op-ph-mark"></span></figure><h3>Mira Kaul</h3><span class="role">Design Systems Lead</span><p>Wrote the token spec three of our clients now use.</p><div class="links"><a href="#">LinkedIn</a></div></article><article class="person" data-op-card data-op-card-title="Owen Serrano" data-op-card-eyebrow="Research Director" data-op-card-body="Owen runs the research practice: recruitment, interviews, synthesis and the uncomfortable readout at the end where we say what people actually did."><figure class="op-media tall shot op-ph" role="img" aria-label="Owen Serrano"><span class="op-ph-mark"></span></figure><h3>Owen Serrano</h3><span class="role">Research Director</span><p>Has interviewed more than two thousand users. Still curious.</p><div class="links"><a href="#">Site</a></div></article></div></div></section>
-<section id="sec-pjxylqd" class="op-section v-quote-spotlight tinted" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(84px,12vw,190px)"><div class="op-shell narrow op-reveal"><blockquote><p>The best interface is the one nobody has to think about — and getting there is the hardest work in software.</p><footer><span><strong>Ada Ramanujan</strong><em>Founder, Nova Studio</em></span></footer></blockquote></div></section>
-<section id="sec-6sm4mh6" class="op-section v-newsletter-band boxed" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(32px,4vw,60px)"><div class="op-shell narrow"><div class="panel op-reveal"><div class="copy"><span class="op-eyebrow">Newsletter</span><h2 class="op-title">One email a month, worth opening</h2><p class="op-sub">What we built, what broke, and what we would do differently.</p></div><form onsubmit="return false"><label class="sr" for="sec-6sm4mh6-email">Email address</label><input class="op-field" id="sec-6sm4mh6-email" name="email" type="email" required placeholder="you@company.com"><button class="op-btn primary" type="submit">Subscribe</button></form><span class="note">No spam. Unsubscribe in one click.</span></div></div></section>
-<footer id="sec-vd2kt2v" class="v-footer-columns"><div class="op-shell"><div class="cols"><div class="about"><h3>THE LONG WAY</h3><p>Chartered surveyors and property consultants, working across the south-west since 1994.</p></div><div class="col"><h4>Company</h4><ul><li><a href="#">About us</a></li><li><a href="#">Our team</a></li><li><a href="#">Careers</a></li><li><a href="#">News</a></li></ul></div><div class="col"><h4>Services</h4><ul><li><a href="#">Valuations</a></li><li><a href="#">Surveys</a></li><li><a href="#">Consultancy</a></li><li><a href="#">Lettings</a></li></ul></div><div class="col"><h4>Contact</h4><ul><li><a href="#">12 Wells Street</a></li><li><a href="#">Bristol BS1 4XY</a></li><li><a href="#">+44 117 000 0000</a></li></ul></div></div><div class="base"><span>© 2026 THE LONG WAY.</span><span class="socials"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Facebook</a></span></div></div></footer>
-<button id="sec-40l3fff" type="button" class="op-totop right" data-op-totop="400" aria-label="Scroll back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>Top</span></button>
+<header id="sec-p73z7u8" class="v-nav-simple sticky solid" data-op-nav><div class="inner"><a class="brand" href="#top"><span>Fen &amp; Marlowe Webpage</span></a><nav class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></nav><div class="tail"><a class="op-btn primary sm" href="#contact">Get in touch</a><button class="burger" data-op-nav-toggle aria-label="Toggle menu"><span></span><span></span><span></span></button></div></div><div class="sheet"><nav><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a><a class="op-btn primary sheet-cta" href="#contact">Get in touch</a></nav></div></header>
+<section id="sec-2lnaiw9" class="op-section v-hero-image-side" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="op-split"><div class="copy op-reveal"><span class="op-eyebrow">Interiors · Bath and London</span><h1 class="op-display">Rooms that were clearly lived in first</h1><p class="op-sub">Whole-house interiors and single rooms, worked out with the people who will actually be sitting in them.</p><ul class="points"><li><svg class="op-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Full-house and single-room projects</span></li><li><svg class="op-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Fixed design fee, agreed up front</span></li><li><svg class="op-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>We manage the trades</span></li></ul><div class="op-actions"><a class="op-btn primary" href="#contact">Start a project</a><a class="op-btn ghost" href="#work">Recent work</a></div></div><div class="op-reveal"><figure class="op-media op-ph" role="img" aria-label="Rooms that were clearly lived in first"><span class="op-ph-mark"></span></figure></div></div></div></section>
+<section id="sec-pdxvqzy" class="op-section v-cards-showcase" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="op-head op-align-left op-reveal "><h2 class="op-title"><span class="">Recent projects</span></h2><p class="op-sub">Click any project to read the detail.</p></div><div class="op-grid op-3 op-stagger"><article class="op-card flush card" data-op-card data-op-card-title="Harbour Mills" data-op-card-eyebrow="Conversion" data-op-card-body="A full condition survey and phased schedule of works for the conversion of a grade II listed mill into nineteen flats, delivered alongside the conservation officer over fourteen months." data-op-card-link-label="View project" data-op-card-facts="Client|Harbour Living~~Completed|2025"><figure class="op-media wide op-ph" role="img" aria-label="Harbour Mills"><span class="op-ph-mark"></span></figure><div class="body"><span class="cat">Conversion</span><h3>Harbour Mills</h3><p>Nineteen flats in a grade II listed mill.</p></div></article><article class="op-card flush card" data-op-card data-op-card-title="Wells Street" data-op-card-eyebrow="Commercial" data-op-card-body="Reinstatement cost assessment and dilapidations advice for a parade of eleven shops, including negotiation of the schedule with three outgoing tenants." data-op-card-link-label="View project" data-op-card-facts="Client|Private landlord~~Completed|2025"><figure class="op-media wide op-ph" role="img" aria-label="Wells Street"><span class="op-ph-mark"></span></figure><div class="body"><span class="cat">Commercial</span><h3>Wells Street</h3><p>Reinstatement valuation for a parade of shops.</p></div></article><article class="op-card flush card" data-op-card data-op-card-title="The Old Rectory" data-op-card-eyebrow="Residential" data-op-card-body="Level 3 survey on a 1780s stone rectory, identifying failed lime render and a bat roost in the west wing. The findings took £42,000 off the agreed price." data-op-card-link-label="View project" data-op-card-facts="Client|Private buyer~~Completed|2024"><figure class="op-media wide op-ph" role="img" aria-label="The Old Rectory"><span class="op-ph-mark"></span></figure><div class="body"><span class="cat">Residential</span><h3>The Old Rectory</h3><p>Pre-purchase survey on a 1780s stone house.</p></div></article></div></div></section>
+<section id="sec-td5a7ix" class="op-section v-about-split-glow" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell op-split"><div class="visual op-reveal"><figure class="op-media tall op-ph" role="img" aria-label="A small team with an unreasonable standard"><span class="op-ph-mark"></span></figure></div><div class="copy op-reveal"><div class="op-head op-align-left op-reveal "><span class="op-eyebrow">About</span><h2 class="op-title"><span class="op-gradient">A small team with an unreasonable standard</span></h2></div><p class="body">We started in a single room in 2014 with one belief: most software is unpleasant because nobody took responsibility for the whole experience. We take that responsibility — research, interface, motion and the front-end code that ships it.</p><ul class="bullets"><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Senior-only team</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>no hand-offs</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Fixed scope</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>fixed timeline</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>You keep the design system</span></li></ul><div class="op-actions"><a class="op-btn primary" href="#team">Meet the team<span class="arrow">&rarr;</span></a></div></div></div></section>
+<section id="sec-5ws2fc7" class="op-section v-steps-simple" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="op-head op-align-left op-reveal "><h2 class="op-title"><span class="">How it works</span></h2></div><ol class="steps op-stagger"><li><span class="n">1</span><div><h3>Get in touch</h3><p>Tell us the address and what you need. We quote a fixed fee the same day.</p></div></li><li><span class="n">2</span><div><h3>We inspect</h3><p>A two to three hour visit, usually within the week. You do not need to be there.</p></div></li><li><span class="n">3</span><div><h3>You get the report</h3><p>Written up within five working days, followed by a call to talk it through.</p></div></li></ol></div></section>
+<section id="sec-1qtnxgm" class="op-section v-work-masonry" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell"><div class="op-head op-align-left op-reveal "><span class="op-eyebrow">Gallery</span><h2 class="op-title"><span class="op-gradient">Frames from the last year</span></h2></div><div class="wall op-stagger" style="--cols:3" data-op-lightbox><figure class="tile r1"><figure class="op-media shot op-ph" role="img" aria-label="Studio, February"><span class="op-ph-mark"></span></figure><figcaption>Studio, February</figcaption></figure><figure class="tile r2"><figure class="op-media shot op-ph" role="img" aria-label="Workshop day two"><span class="op-ph-mark"></span></figure><figcaption>Workshop day two</figcaption></figure><figure class="tile r3"><figure class="op-media shot op-ph" role="img" aria-label="Prototype wall"><span class="op-ph-mark"></span></figure><figcaption>Prototype wall</figcaption></figure><figure class="tile r1"><figure class="op-media shot op-ph" role="img" aria-label="Launch night"><span class="op-ph-mark"></span></figure><figcaption>Launch night</figcaption></figure><figure class="tile r2"><figure class="op-media shot op-ph" role="img" aria-label="Field research"><span class="op-ph-mark"></span></figure><figcaption>Field research</figcaption></figure><figure class="tile r3"><figure class="op-media shot op-ph" role="img" aria-label="The good whiteboard"><span class="op-ph-mark"></span></figure><figcaption>The good whiteboard</figcaption></figure></div></div></section>
+<section id="sec-vu6hnfu" class="op-section v-quote-spotlight tinted" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(84px,12vw,190px)"><div class="op-shell narrow op-reveal"><blockquote><p>The best interface is the one nobody has to think about — and getting there is the hardest work in software.</p><footer><span><strong>Ada Ramanujan</strong><em>Founder, Nova Studio</em></span></footer></blockquote></div></section>
+<section id="sec-c26v9us" class="op-section v-pricing-tiers" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell" data-op-billing><div class="op-head center op-align-center op-reveal "><span class="op-eyebrow">Pricing</span><h2 class="op-title"><span class="op-gradient">Straightforward plans</span></h2><p class="op-sub">No seat minimums, no sales call, cancel whenever you like.</p></div><div class="switch op-reveal"><span>Monthly</span><button data-op-billing-toggle aria-pressed="false" aria-label="Toggle annual billing"><i></i></button><span>Annual</span><em>Save 20% annually</em></div><div class="plans op-stagger"><article class="plan op-card"><h3>Starter</h3><p class="blurb">For one person and one idea.</p><div class="price"><strong data-op-price="₹0" data-op-price-annual="₹0">₹0</strong><span>/month</span></div><a class="op-btn ghost" href="#signup">Start free</a><ul><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>3 projects</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Community support</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>OnePage subdomain</span></li></ul></article><article class="plan op-card featured"><span class="flag">Most popular</span><h3>Studio</h3><p class="blurb">For teams shipping regularly.</p><div class="price"><strong data-op-price="₹1,499" data-op-price-annual="₹1,199">₹1,499</strong><span>/month</span></div><a class="op-btn primary" href="#signup">Start 14-day trial</a><ul><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Unlimited projects</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Custom domains</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Team workspace</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Priority support</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Export to GitHub</span></li></ul></article><article class="plan op-card"><h3>Scale</h3><p class="blurb">For organisations with governance.</p><div class="price"><strong data-op-price="₹4,999" data-op-price-annual="₹3,999">₹4,999</strong><span>/month</span></div><a class="op-btn ghost" href="#contact">Talk to us</a><ul><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Everything in Studio</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>SSO &amp; SAML</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Audit logs</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Component governance</span></li><li><svg class="op-icon tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Dedicated manager</span></li></ul></article></div><p class="foot op-reveal">All prices exclude GST. Education and non-profit discounts available.</p></div></section>
+<section id="sec-onythbv" class="op-section v-cta-simple" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(32px,4vw,60px)"><div class="op-shell"><div class="band bordered op-reveal"><div class="copy"><h2 class="op-title">Need a survey booked this month?</h2><p>Tell us the address and we will come back with a fixed fee today.</p></div><div class="acts"><a class="op-btn primary" href="#contact">Request a quote</a><a class="op-btn ghost" href="tel:+441170000000">Call +44 117 000 0000</a></div></div></div></section>
+<section id="sec-fq42has" class="op-section v-contact-split-form" style="padding-top:var(--op-pad);padding-bottom:var(--op-pad);--op-pad:clamp(56px,8vw,132px)"><div class="op-shell op-split layout"><div class="side op-reveal"><div class="op-head op-align-left op-reveal "><span class="op-eyebrow">Contact</span><h2 class="op-title"><span class="op-gradient">Tell us what you are building</span></h2><p class="op-sub">The more specific you are, the more useful our first reply will be.</p></div><ul class="details"><li><span class="glyph"><svg class="op-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg></span><div><span class="lbl">Email</span><a href="mailto:hello@nova.studio">hello@nova.studio</a></div></li><li><span class="glyph"><svg class="op-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h3l1.6 4-2 1.4a12 12 0 006.5 6.5l1.4-2 4 1.6v3A2.5 2.5 0 0118.4 20 16 16 0 014 5.6 2.5 2.5 0 016.5 3z"/></svg></span><div><span class="lbl">Phone</span><a href="tel:+919000000000">+91 90000 00000</a></div></li><li><span class="glyph"><svg class="op-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><span class="lbl">Studio</span><span class="val">Indiranagar, Bengaluru</span></div></li></ul><p class="avail"><span class="op-dot"></span>Currently booking projects starting from the second week of September.</p></div><form class="op-card form op-reveal" onsubmit="return false"><div class="rows"><div class="field"><label class="op-label" for="f-your-name-0">Your name <i>*</i></label><input class="op-field" id="f-your-name-0" name="your-name" type="text" placeholder="Ada Ramanujan" required></div><div class="field"><label class="op-label" for="f-email-1">Email <i>*</i></label><input class="op-field" id="f-email-1" name="email" type="email" placeholder="you@company.com" required></div><div class="field"><label class="op-label" for="f-organisation-2">Organisation</label><input class="op-field" id="f-organisation-2" name="organisation" type="text" placeholder="Company or institution"></div><div class="field"><label class="op-label" for="f-budget-range-3">Budget range</label><select class="op-field" id="f-budget-range-3" name="budget-range"><option value="">Select a range</option><option value="Under ₹5 lakh">Under ₹5 lakh</option><option value="₹5–15 lakh">₹5–15 lakh</option><option value="₹15–40 lakh">₹15–40 lakh</option><option value="Above ₹40 lakh">Above ₹40 lakh</option></select></div><div class="field wide"><label class="op-label" for="f-what-do-you-need--4">What do you need? <i>*</i></label><textarea class="op-field" id="f-what-do-you-need--4" name="what-do-you-need-" rows="5" placeholder="A paragraph is plenty." required></textarea></div></div><button class="op-btn primary" type="submit">Send enquiry<span class="arrow">&rarr;</span></button><p class="consent">We will only use these details to reply. Nothing is added to a mailing list.</p></form></div></section>
+<footer id="sec-b5m8r4v" class="v-footer-columns"><div class="op-shell"><div class="cols"><div class="about"><h3>Fen &amp; Marlowe</h3><p>Chartered surveyors and property consultants, working across the south-west since 1994.</p></div><div class="col"><h4>Company</h4><ul><li><a href="#">About us</a></li><li><a href="#">Our team</a></li><li><a href="#">Careers</a></li><li><a href="#">News</a></li></ul></div><div class="col"><h4>Services</h4><ul><li><a href="#">Valuations</a></li><li><a href="#">Surveys</a></li><li><a href="#">Consultancy</a></li><li><a href="#">Lettings</a></li></ul></div><div class="col"><h4>Contact</h4><ul><li><a href="#">12 Wells Street</a></li><li><a href="#">Bristol BS1 4XY</a></li><li><a href="#">+44 117 000 0000</a></li></ul></div></div><div class="base"><span>© 2026 Fen &amp; Marlowe.</span><span class="socials"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Facebook</a></span></div></div></footer>
+<button id="sec-zn0sfzk" type="button" class="op-totop right" data-op-totop="400" aria-label="Scroll back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>Top</span></button>
 </div>
 <script>
 
