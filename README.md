@@ -1,4 +1,4 @@
-# Podcast & Show
+# Interior Design Studio
 
 Published with OnePage Studio.
 
